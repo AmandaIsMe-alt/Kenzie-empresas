@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Kenzie Empresas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/indexCadastro.css">
+</head>
+<body class="background-grey5">
+    <main>
+        <section class="container">
+            <form class="background-white">
+                <div class="d-flex justify-content-space-between align-items-center">
+                    <h1 class="title1">Cadastro</h1>
+                    <a class="btn btn-outline-medium" href="../../index.html">Voltar</a>
+                </div>
+
+                <input id="inputName" type="text" placeholder="Seu nome" required>
+                <input id="inputMail" type="email" placeholder="Seu e-mail" required>
+                <input id="inputPassword" type="password" placeholder="Sua senha" required minlength="8" maxlength="12">
+
+                <select name="inputJob" id="inputJob" required>
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                </select>
+
+                <button id="btnRegister" class="btn btn-primary w-100" type="submit">Registar</button>
+        
+                <p class="text3 w-100 text-center color-grey0 mt-3">Já possui login?</p>
+                <a class="btn btn-outline-medium w-100" href="../../index.html">Ir para página de login</a>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../scripts/cadastro.js"></script>
+</body>
+</html>

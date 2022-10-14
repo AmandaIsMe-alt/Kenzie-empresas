@@ -1,0 +1,17 @@
+form {
+    width: 100%;
+    max-width: 461px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-top: 110px;
+}
+
+@media (max-width: 769px){
+
+    form {
+        width: auto;
+        margin-top: 50px;
+    }
+}
